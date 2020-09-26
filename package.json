@@ -1,9 +1,11 @@
 {
-  "name": "dio",
+  "name": "nodejseredis",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/server.js",
+    "queue": "nodemon src/queue.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,15 @@
   },
   "homepage": "https://github.com/Albislan/NodejsERedis#readme",
   "dependencies": {
+    "bull-board": "^0.9.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nodemailer": "^6.4.11"
+    "nodemailer": "^6.4.11",
+    "password-generator": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.14.2",
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0"
   }
 }

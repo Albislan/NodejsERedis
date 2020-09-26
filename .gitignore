@@ -1,2 +1,4 @@
 node_modules
 redis-6.0.8.tar.gz
+.env
+redis-6.0.8
